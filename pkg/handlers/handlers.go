@@ -96,7 +96,7 @@ func (m *Repository) AvailabilityJSON(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-	log.Println(string(out))
+
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(out)
 }
