@@ -7,8 +7,8 @@ import (
 
 // AppConfig holds the application config
 type AppConfig struct {
-	UseCache bool
+	UseCache      bool
 	TemplateCache map[string]*template.Template
-	InProduction bool
-	Session *scs.SessionManager
+	InProduction  bool
+	Session       *scs.SessionManager
 }
