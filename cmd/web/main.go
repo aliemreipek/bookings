@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/alexedwards/scs/v2"
-	"github.com/aliemreipek/bookings/pkg/config"
-	"github.com/aliemreipek/bookings/pkg/handlers"
-	"github.com/aliemreipek/bookings/pkg/render"
+	"github.com/aliemreipek/bookings/internal/config"
+	"github.com/aliemreipek/bookings/internal/handlers"
+	"github.com/aliemreipek/bookings/internal/render"
 	"log"
 	"net/http"
 	"time"
@@ -13,8 +13,10 @@ import (
 
 // portNumber is the number which my application runs in web browser
 const portNumber = ":8080"
+
 var app config.AppConfig
 var session *scs.SessionManager
+
 // main is the main application function
 func main() {
 
