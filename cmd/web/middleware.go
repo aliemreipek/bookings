@@ -5,22 +5,21 @@ import (
 	"net/http"
 )
 
-
 // NoSurf adds CSRF protection to all POST requests
-func NoSurf(next http.Handler) http.Handler{
-	csrfHamdler := nosurf.New(next)
+func NoSurf(next http.Handler) http.Handler {
+	csrfHandler := nosurf.New(next)
 
-	csrfHamdler.SetBaseCookie(http.Cookie{
+	csrfHandler.SetBaseCookie(http.Cookie{
 		HttpOnly: true,
-		Path: "/",
-		Secure: app.InProduction,
+		Path:     "/",
+		Secure:   app.InProduction,
 		SameSite: http.SameSiteLaxMode,
 	})
-	return csrfHamdler
+	return csrfHandler
 
 }
+
 // SessionLoad loads and saves the session on every request
-func SessionLoad(next http.Handler) http.Handler{
+func SessionLoad(next http.Handler) http.Handler {
 	return session.LoadAndSave(next)
 }
-

@@ -1,0 +1,22 @@
+mode: set
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:23.47,27.2 1 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:30.33,32.2 1 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:35.67,40.2 3 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:43.68,52.2 5 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:55.74,64.2 4 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:67.78,69.16 2 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:73.2,83.19 6 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:92.2,93.66 2 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:69.16,72.3 2 0
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:83.19,91.3 4 0
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:98.71,101.2 1 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:104.69,107.2 1 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:110.75,113.2 1 0
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:116.79,120.2 3 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:128.79,134.16 3 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:138.2,139.14 2 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:134.16,136.3 1 0
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:143.70,146.2 1 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:148.81,150.9 2 1
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:156.2,161.4 4 0
+github.com/aliemreipek/bookings/internal/handlers/handlers.go:150.9,155.3 4 1
