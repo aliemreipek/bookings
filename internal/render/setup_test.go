@@ -5,6 +5,7 @@ import (
 	"github.com/alexedwards/scs/v2"
 	"github.com/aliemreipek/bookings/internal/config"
 	"github.com/aliemreipek/bookings/internal/models"
+	"log"
 	"net/http"
 	"os"
 	"testing"
@@ -18,6 +19,12 @@ func TestMain(m *testing.M) {
 
 	// what am I going to put in this session
 	gob.Register(models.Reservation{})
+
+	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
+	testApp.InfoLog = infoLog
+
+	errorLog := log.New(os.Stdout, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
+	testApp.ErrorLog = errorLog
 
 	// change this to true when in production
 	testApp.InProduction = false
